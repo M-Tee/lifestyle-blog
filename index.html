@@ -62,7 +62,7 @@
             font-weight: bold;
         }
 
-        hr {
+        .line{
             width: 75px;
             height: 2px;
             background-color: #712E1E;
@@ -80,7 +80,8 @@
             margin: 30px 0;
         }
 
-        .btn {
+        .btn,
+        .underline {
             background-color: #712E1E;
             color: #FFFFFF;
 
@@ -111,6 +112,14 @@
         .card p {
             padding: 10px;
         }
+        .social-icons{
+            display: flex;
+            flex-direction: row;
+        }
+        .social-icons img{
+            margin: 10px;
+        }
+        
     </style>
 </head>
 
@@ -166,7 +175,7 @@
     <section class="section-3">
         <div class="container">
             <h2 class="title">Our Work Speaks</h2>
-            <hr>
+            <hr class="line">
             <div class="row">
                 <div class="col-md-5">
                     <img src="work-speaks.jpeg" alt=" image" class="rounded img img-fluid">
@@ -213,7 +222,7 @@
     <section class=" section-4 text-center">
         <div class="container">
             <h2 class="title text-left">Our Locations</h2>
-            <hr>
+            <hr class="line">
             <div class="card-deck">
                 <div class="card">
                     <img src="lagos.jpeg" alt=" image" class="rounded card-img img-fluid">
@@ -250,6 +259,68 @@
 
 
     </section>
+    <footer>
+        <div class="container">
+            <div class="card-deck">
+                <div class="card">
+                    <h5>Subscribe for Newsletter</h5>
+                    <input type="email" placeholder="email">
+                    <p>By Subscribing to our mailing list
+                            you will always be update with
+                            the latest news from us.</p>
+                </div>
+                <div class="card">
+                    <h5>Travel</h5>
+                    <p>Fabulous Places</p>
+                    <p>Explore</p>
+                    <p>Sites to See</p>
+                        
+                        
+                        
+                        
+                        </div>
+                <div class="card">
+                    <h5>Lifestyle</h5>
+                    <p>Career & Finance</p>
+                    <p>Love & Relatinships</p>
+                    <p>Fitness & Wellness</p>
+
+                        
+                        
+                        
+                        
+                        </div>
+                <div class="card">
+                    <h5>Contact Me</h5>
+                    <p>+234 801 234 5678</p>
+                    <p>+234 701 234 5678</p>
+                    <p>info@glam.org</p>
+
+                        
+                        
+                        
+                        
+                        </div>
+            </div>   
+            <hr class="underline ">
+            <div class="card-deck">
+                <div class="card">
+                    <img src="logo.svg" alt="logo">
+                </div>
+                <div class="card social-icons float-right">
+                        
+                    
+                    <img src="facebook.svg" alt="">
+                    <img src="insta.svg" alt="">
+                    <img src="linkedin.svg" alt="">
+                    <img src="pinterest.svg" alt="">
+                    <img src="twitter.svg" alt="">
+                </div>
+            </div>
+            <hr class="underline ">         
+        </div>
+        
+    </footer>
 
 </body>
 
