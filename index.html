@@ -17,14 +17,14 @@
             height: 70vh;
         }
 
-        
+
 
         .landing-img {
             margin-top: 80px;
             width: 100vw;
 
         }
-     
+
 
         .content {
             margin-top: -100px;
@@ -35,17 +35,19 @@
             background-color: rgba(31, 30, 30, 0.342);
             font-weight: bold;
 
-           
+
         }
-        .content>p{
+
+        .content>p {
             width: 450px;
-           
+
 
         }
 
         .section-2,
         .section-3,
-        .section-4 {
+        .section-4,
+        .footer {
             padding-top: 85px;
             padding-bottom: 70px;
         }
@@ -62,7 +64,7 @@
             font-weight: bold;
         }
 
-        .line{
+        .line {
             width: 75px;
             height: 2px;
             background-color: #712E1E;
@@ -97,11 +99,19 @@
         .card {
             border: none;
             margin-right: 70px;
-            background-color: #F7F2EF;
         }
 
         .card-img {
             height: 200px;
+        }
+
+        .location-card {
+            background-color: unset;
+
+        }
+
+        .loctaion-card p {
+            padding: 10px;
         }
 
         .location {
@@ -109,24 +119,43 @@
             font-weight: bold;
         }
 
-        .card p {
-            padding: 10px;
+
+        .footer-title {
+            color: #712E1E; 
         }
-        .social-icons{
+
+        .input-group-lg {
+            background-color: #F7F2EF;
+            border-radius: 10px;
+
+
+        }
+
+        input {
+            border: 0;
+            background-color: unset;
+        }
+        .underline{
+            height: 2px;
+            opacity: 0.5;
+        }
+
+      
+        .social-icons {
             display: flex;
             flex-direction: row;
         }
-        .social-icons img{
+
+        .social-icon{
             margin: 10px;
         }
-        
     </style>
 </head>
 
 <body>
     <!-- Landing -->
     <section class="container-fluid bg-img overlay ">
-        
+
         <div class=" content text-white">
             <p>
                 We provide sufficent reason for you
@@ -223,8 +252,9 @@
         <div class="container">
             <h2 class="title text-left">Our Locations</h2>
             <hr class="line">
+
             <div class="card-deck">
-                <div class="card">
+                <div class="card location-card">
                     <img src="lagos.jpeg" alt=" image" class="rounded card-img img-fluid">
                     <h5 class="location">Lagos, Nigeria</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -232,7 +262,7 @@
                         dolore magna aliqua. dolore magna aliqua. Ut enim ad minim veniam.
                     </p>
                 </div>
-                <div class="card">
+                <div class="card location-card">
                     <img src="accra.jpeg" alt=" image" class="rounded card-img img-fluid">
                     <h5 class="location"> Accra, Ghana</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -240,7 +270,7 @@
                         dolore magna aliqua. dolore magna aliqua. Ut enim ad minim veniam.
                     </p>
                 </div>
-                <div class="card">
+                <div class="card location-card">
                     <img src="italy.jpeg" alt=" image" class="rounded card-img img-fluid">
                     <h5 class="location"> Milan, Italy</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -259,67 +289,63 @@
 
 
     </section>
+
+    <!-- footer -->
     <footer>
-        <div class="container">
+        <div class="container footer">
             <div class="card-deck">
                 <div class="card">
-                    <h5>Subscribe for Newsletter</h5>
-                    <input type="email" placeholder="email">
-                    <p>By Subscribing to our mailing list
-                            you will always be update with
-                            the latest news from us.</p>
+                    <h5 class="footer-title">Subscribe for Newsletter</h5>
+                    <p class="input-group input-group-lg p-2">
+                        <input type="email" placeholder="Enter email adress">
+                    </p>
+
+                    <p class="text-center">
+                        By Subscribing to our mailing list
+                        you will always be update with
+                        the latest news from us.
+                    </p>
                 </div>
                 <div class="card">
-                    <h5>Travel</h5>
+                    <h5 class="footer-title">Travel</h5>
                     <p>Fabulous Places</p>
                     <p>Explore</p>
                     <p>Sites to See</p>
-                        
-                        
-                        
-                        
-                        </div>
+                </div>
                 <div class="card">
-                    <h5>Lifestyle</h5>
+                    <h5 class="footer-title">Lifestyle</h5>
                     <p>Career & Finance</p>
                     <p>Love & Relatinships</p>
                     <p>Fitness & Wellness</p>
-
-                        
-                        
-                        
-                        
-                        </div>
+                </div>
                 <div class="card">
-                    <h5>Contact Me</h5>
+                    <h5 class="footer-title">Contact Me</h5>
                     <p>+234 801 234 5678</p>
                     <p>+234 701 234 5678</p>
                     <p>info@glam.org</p>
-
-                        
-                        
-                        
-                        
-                        </div>
-            </div>   
-            <hr class="underline ">
-            <div class="card-deck">
-                <div class="card">
-                    <img src="logo.svg" alt="logo">
                 </div>
-                <div class="card social-icons float-right">
-                        
-                    
-                    <img src="facebook.svg" alt="">
-                    <img src="insta.svg" alt="">
+            </div>
+
+            <hr class="underline ">
+            <div class="card-deck ">
+                <div class="card d-flex flex-row">
+                    <img src="logo.svg" alt="logo" class="p-2 mr-auto">
+                </div>
+                <div class="card social-icons p-2">
+                    <img src="facebook.svg" alt="" class="m-3">
+                    <img src="insta.svg" alt="" class="m-6">
                     <img src="linkedin.svg" alt="">
                     <img src="pinterest.svg" alt="">
                     <img src="twitter.svg" alt="">
                 </div>
             </div>
-            <hr class="underline ">         
+            <hr class="underline ">
+            <div class="copyright text-center">
+                <p>© GLAM 2020</p>
+                <p>All rights reserved</p>
+            </div>
         </div>
-        
+
     </footer>
 
 </body>
