@@ -1,0 +1,179 @@
+
+/* General Sytles */
+
+.section-2,
+.section-3,
+.section-4,
+.footer {
+    padding-top: 85px;
+    padding-bottom: 70px;
+}
+
+.section-2,
+.section-4 {
+    background-color: #F7F2EF;
+
+}
+
+.title {
+    font-size: 30px;
+    color: #712E1E;
+    font-weight: bold;
+}
+
+.line {
+    width: 75px;
+    height: 2px;
+    background-color: #712E1E;
+    border-radius: 10px;
+    margin-left: 0;
+}
+
+p {
+    font-size: 15px;
+}
+
+.btn,
+.underline {
+    background-color: #712E1E;
+    color: #FFFFFF;
+
+}
+
+.btn:hover {
+    color: #712E1E;
+    background-color: #FFFFFF;
+}
+
+.sub-title {
+    font-size: 20px;
+    color: #712E1E;
+    font-weight: bold;
+}
+
+/* Navbar Styles */
+.navbar {
+    margin: auto;
+}
+
+.form-control {
+    background-color: #712E1E;
+
+}
+
+.form-control::placeholder {
+    color: #FFFFFF;
+}
+
+.logo {
+    width: 80%;
+}
+
+.nav-link {
+    color: #712E1E;
+}
+
+/* landing styles */
+.bg-img {
+    background: url(landing-img.jpeg) no-repeat center bottom fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 70vh;
+   
+}
+
+.landing-img {
+    margin-top: 80px;
+    width: 100vw;
+}
+
+.content {
+    margin-top: -100px;
+    margin-left: -30px;
+    width: 100vw;
+    height: 70vh;
+    padding-top: 250px;
+    padding-left: 150px;
+    background-color: rgba(31, 30, 30, 0.342);
+    font-weight: bold;
+}
+
+.container>p {
+    max-width: 450px;
+}
+
+.view-btn {
+    background-color: #F7F2EF;
+    color: #712E1E;
+}
+
+.view-btn:hover {
+    background-color: #712E1E;
+    color: #FFFFFF;
+}
+
+
+
+/* Work With Us sytles */
+.image {
+    width: 200px;
+    height: 180px;
+    margin: 30px 0;
+}
+
+/* Our locations Styles */
+.card {
+    border: none;
+    margin-right: 70px;
+}
+
+.card-img {
+    height: 200px;
+}
+
+.location-card {
+    background-color: unset;
+
+}
+
+.loctaion-card p {
+    padding: 10px;
+}
+
+.location {
+    margin: 10px;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+
+.footer-title {
+    color: #712E1E;
+}
+
+.input-group-lg {
+    background-color: #F7F2EF;
+    border-radius: 10px;
+}
+
+input {
+    border: 0;
+    background-color: unset;
+}
+
+.underline {
+    height: 2px;
+    opacity: 0.5;
+}
+
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.social-icon {
+    margin: 10px;
+}
